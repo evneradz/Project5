@@ -1,0 +1,33 @@
+﻿Σε αυτό το project έπρεπε να υπλοποιήσουμε 3 διαφορετικούς Listener.
+
+Υλοποίησα ένα HttpSessionListener (ConcurrentUserTracker.java) ,ένα ServletContextAttributeListener (TotalUploadsCounter.java) και ένα HttpSessionAttributeListener (UploadCounter.java).
+
+Ακόμη υλοποίησα ένα HttpServlet (DisplayUsers.java) το οποίο χρησιμοποιώ για την τύπωση όλων των πληροφοριών που μου παρέχουν οι Listeners.
+
+
+Από τους Listeneres:
+
+ο πρώτος μετράει τα Sessions που έχουν δημιουργηθεί τα τελευταία 30 λεπτά.
+ο δεύτερος μετράει τα συνολικά Uploads που έχουν γίνει.
+ο τρίτος μετράει πόσα από τα Sessions που έχουν δημιουργηθεί κάνουν Upload.
+
+Για την υλοποίηση του πρώτου ακολούθησα αυτό:
+	http://www.informit.com/articles/article.aspx?p=170963&seqNum=7
+
+Για την υλοποίηση του δεύτερου χρήσιμο ήταν αυτό:
+	http://www.roseindia.net/servlets/ServletContextAttributeListener.shtml
+
+Για την υλοποίηση του τρίτου χρήσιμο ήταν αυτό:
+	http://www.xyzws.com/Servletfaq/when-do-i-use-httpsessionattributelistener/5
+
+
+Το αποτέλεσμα φαίνεται εδώ:
+	http://83.212.101.53:8080/upload/DisplayUsers
+
+Ενώ η αρχική σελίδα του προηγούμενου project ανοίγει εδώ:
+	http://83.212.101.53:8080/upload/start
+
+
+
+
+
